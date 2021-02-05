@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
+}
 .logo{
     /* width: 20px; */
     display: flex;
@@ -22,6 +26,8 @@
     align-items: center;
     position: sticky;
     top: 0;
+   
+    cursor: pointer;
     
     
 }
@@ -38,7 +44,7 @@
 }
 .nav-lists li{
     list-style: none;
-    padding:26px 30px;
+    padding:26px 50px;
     /* text-decoration: none; */
 }
 .nav-lists li a{
@@ -119,6 +125,7 @@
 }
 .big-text{
     font-size: 40px;
+    
 }
 .small-text{
     font-size: 18px;
@@ -154,13 +161,13 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height:400px;
+    /* height:400px; */
     max-width: 80%;
     margin: auto;
     font-family: 'Ubuntu', sans-serif;
 }
 .paras{
-    padding: 0 65px;
+    padding: 20px 65px;
 }
 .sec-left{
     /* display: flex;
@@ -219,11 +226,16 @@
     color: white;
     margin-top: 3px;
 }
-@media only screen and (max-width:1140px){
-    .nav-lists{
-        flex-direction: column;
-    }
-    .nav-bar{
-        flex-direction: column;
-    }
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+}
+.line{
+    width: 33px;
+    margin: 5px 3px;
+    height: 4px;
+    background-color: white;
 }
