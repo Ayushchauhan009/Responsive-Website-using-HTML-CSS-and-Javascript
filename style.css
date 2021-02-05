@@ -26,7 +26,7 @@
     
 }
 .nav-lists{
-    width: 50%;
+    width: 70%;
     /* background-color: black; */
     /* color: green; */
     display: flex;
@@ -44,6 +44,9 @@
 .nav-lists li a{
     text-decoration: none;
     color: white;
+    font-family: cursive;
+    padding: 6px;
+    /* padding-left: px; */
 
 }
 .nav-lists li a:hover{
@@ -53,10 +56,11 @@
 }
 
 .rightNav{
-    width: 50%;
+    width: 30%;
     /* background-color: blue; */
-    text-align: right;
+    /* text-align: right; */
     padding:0 23px;
+    /* margin: auto; */
 
 }
 #search{
@@ -64,6 +68,7 @@
     font-size: 17px;
     padding: 5px;
     border: 2px solid grey;
+    width: 61%;
 
 }
 .btn{
@@ -137,7 +142,13 @@
 .btn-sm{
     padding: 6px 10px;
     vertical-align: middle;
+    font-size: 15px;
 
+}
+.btn-dark{
+    color:black;
+    background-color: rgb(86, 86, 218);
+    border:2px solid black;
 }
 .section{
     display: flex;
@@ -179,6 +190,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    font-size:25px;
     font-family: 'Ubuntu', sans-serif;
     /* margin-top: px; */
 }
@@ -186,10 +198,32 @@
     padding: 6px 3px;
     font-size:16px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border: 2px solid grey;
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 10px;
     /* text-align: center; */
     margin: 23px 0;
     width: 14rem;
 }
 /* .contactme input::-webkit-scrollbar-track-piece */
+.textarea{
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 20px;
+    height: 6rem;
+    padding: 4px 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text-footer{
+    text-align: center;
+    padding: 30px 0; 
+    color: white;
+    margin-top: 3px;
+}
+@media only screen and (max-width:1140px){
+    .nav-lists{
+        flex-direction: column;
+    }
+    .nav-bar{
+        flex-direction: column;
+    }
+}

@@ -9,17 +9,22 @@
 </head>
 
 <body>
-    <nav class="nav-bar background">
-        <ul class="nav-lists">
+    <nav class="nav-bar background h-nav">
+        <ul class="nav-lists v-class">
             <div class="logo"><img src="images/logo image.jpg" alt="logo"></div>
             <li> <a href="#home">Home</a> </li>
             <li> <a href="#certificate">Certificates</a> </li>
             <li> <a href="#about">About</a> </li>
             <li> <a href="#contact">Contact Me</a> </li>
         </ul>
-        <div class="rightNav">
+        <div class="rightNav v-class">
             <input type="text" name="search" id="search">
             <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
     </nav>
     <section class="background firstSection">
@@ -97,7 +102,8 @@
         </div>
 
         <div class="thumbnail">
-            <img src="https://source.unsplash.com/user/erondu/900x900/?javascript,apple" alt="main-photo" class="fluidimg">
+            <img src="https://source.unsplash.com/user/erondu/900x900/?javascript,apple" alt="main-photo"
+                class="fluidimg">
         </div>
     </section>
     <section class="section">
@@ -130,17 +136,23 @@
             <img src="https://source.unsplash.com/user/erondu/900x900" alt="main-photo" class="fluidimg">
         </div>
     </section>
-    
+
     <section class="contactme">
         <br>
-       <h2 class="contact">Contact Us</h2>
-       <input type="text" name="Name" id="name" placeholder="Enter your Name:">
-       <input type="text" name="Phone" id="phone" placeholder="Enter your Phone Number:">
-       <input type="email" name="EMail" id="email" placeholder="Enter your E-mail:">
+        <h2 class="contact">Contact Us</h2>
+        <input type="text" name="Name" id="name" placeholder="Enter your Name:">
+        <input type="text" name="Phone" id="phone" placeholder="Enter your Phone Number:">
+        <input type="email" name="EMail" id="email" placeholder="Enter your E-mail:">
+        <textarea class="textarea" name="text" id="textarea" cols="30" rows="10"
+            placeholder="Write your thoughts here:"></textarea>
+        <button class="btn btn-dark">Submit</button>
 
-    
+
 
     </section>
+    <footer>
+        <p class="text-footer background"><b>CopyRight &copy;2028 - <www class="iAyushChauhan com">AyushChauhan</www>- All Rights Reserved.</b> </p>
+    </footer>
 </body>
 
 </html>
